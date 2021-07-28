@@ -22,6 +22,14 @@ Route::prefix('admin', function(){
         // Logout
         Route::post('/logout', 'Admin\AuthController@logout');
 
+        // Admins resource
+        Route::get('/admins', 'Admin\AdminController@index');
+        Route::get('/admins/create', 'Admin\AdminController@create');
+        Route::post('/admins/store', 'Admin\AdminController@store');
+        Route::get('/admins/{id}/edit', 'Admin\AdminController@edit');
+        Route::post('/admins/{id}/update', 'Admin\AdminController@update');
+        Route::post('/admins/{id}/delete', 'Admin\AdminController@delete');
+
 
     });
 
