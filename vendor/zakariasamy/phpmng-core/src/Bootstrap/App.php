@@ -13,7 +13,6 @@ class app{
 
     public static function run(){
 
-
         // Register Whoops to handle erros
         Whoops::handle();
 

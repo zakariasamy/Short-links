@@ -41,4 +41,13 @@ class AuthController{
         return redirect(url('/admin/dashboard'));
     }
 
+
+    public function logout(){
+       $a =  Cookie::remove('admin');
+
+        //dd(isset($_COOKIE['admin']) && $_COOKIE['admin'] != '');
+        Session::remove('admin');
+        return redirect('/admin/login');
+    }
+
 }
