@@ -24,12 +24,12 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => '1.0.1',
-    'version' => '1.0.1.0',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => 'b2efda9c007c41c3d067329712b6954858e87a5e',
     'name' => 'zakariasamy/phpmng',
   ),
   'versions' => 
@@ -153,12 +153,12 @@ private static $installed = array (
     ),
     'nesbot/carbon' => 
     array (
-      'pretty_version' => '2.50.0',
-      'version' => '2.50.0.0',
+      'pretty_version' => '2.51.1',
+      'version' => '2.51.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'f47f17d17602b2243414a44ad53d9f8b9ada5fdb',
+      'reference' => '8619c299d1e0d4b344e1f98ca07a1ce2cfbf1922',
     ),
     'psr/container' => 
     array (
@@ -275,21 +275,21 @@ private static $installed = array (
     ),
     'zakariasamy/phpmng' => 
     array (
-      'pretty_version' => '1.0.1',
-      'version' => '1.0.1.0',
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => 'b2efda9c007c41c3d067329712b6954858e87a5e',
     ),
     'zakariasamy/phpmng-core' => 
     array (
-      'pretty_version' => '1.0.1',
-      'version' => '1.0.1.0',
+      'pretty_version' => '1.0.3',
+      'version' => '1.0.3.0',
       'aliases' => 
       array (
       ),
-      'reference' => '67a7b66542de9eacb41a6a39732aeb258a832af9',
+      'reference' => '3e1e8164335744ba3c63d96e722d9c83e4b60a71',
     ),
   ),
 );

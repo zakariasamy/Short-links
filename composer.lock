@@ -775,22 +775,23 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.50.0",
+            "version": "2.51.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "f47f17d17602b2243414a44ad53d9f8b9ada5fdb"
+                "reference": "8619c299d1e0d4b344e1f98ca07a1ce2cfbf1922"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/f47f17d17602b2243414a44ad53d9f8b9ada5fdb",
-                "reference": "f47f17d17602b2243414a44ad53d9f8b9ada5fdb",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/8619c299d1e0d4b344e1f98ca07a1ce2cfbf1922",
+                "reference": "8619c299d1e0d4b344e1f98ca07a1ce2cfbf1922",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "php": "^7.1.8 || ^8.0",
                 "symfony/polyfill-mbstring": "^1.0",
+                "symfony/polyfill-php80": "^1.16",
                 "symfony/translation": "^3.4 || ^4.0 || ^5.0"
             },
             "require-dev": {
@@ -809,8 +810,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.x-dev",
-                    "dev-3.x": "3.x-dev"
+                    "dev-3.x": "3.x-dev",
+                    "dev-master": "2.x-dev"
                 },
                 "laravel": {
                     "providers": [
@@ -864,7 +865,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-06-28T22:38:45+00:00"
+            "time": "2021-07-28T13:16:28+00:00"
         },
         {
             "name": "psr/container",
@@ -1602,16 +1603,16 @@
         },
         {
             "name": "zakariasamy/phpmng-core",
-            "version": "1.0.1",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zakariasamy/phpmng-core.git",
-                "reference": "67a7b66542de9eacb41a6a39732aeb258a832af9"
+                "reference": "3e1e8164335744ba3c63d96e722d9c83e4b60a71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zakariasamy/phpmng-core/zipball/67a7b66542de9eacb41a6a39732aeb258a832af9",
-                "reference": "67a7b66542de9eacb41a6a39732aeb258a832af9",
+                "url": "https://api.github.com/repos/zakariasamy/phpmng-core/zipball/3e1e8164335744ba3c63d96e722d9c83e4b60a71",
+                "reference": "3e1e8164335744ba3c63d96e722d9c83e4b60a71",
                 "shasum": ""
             },
             "require": {
@@ -1642,9 +1643,9 @@
             "description": "The core of phpmng Framework",
             "support": {
                 "issues": "https://github.com/zakariasamy/phpmng-core/issues",
-                "source": "https://github.com/zakariasamy/phpmng-core/tree/1.0.1"
+                "source": "https://github.com/zakariasamy/phpmng-core/tree/1.0.3"
             },
-            "time": "2021-07-26T23:08:51+00:00"
+            "time": "2021-07-28T19:09:21+00:00"
         }
     ],
     "packages-dev": [],

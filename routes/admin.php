@@ -11,7 +11,7 @@ Route::prefix('admin', function(){
     Route::middleware('GuestAdmin', function() {
         // Login
         Route::get('/login', 'Admin\AuthController@login');
-        Route::get('/', 'Admin\AuthController@store');
+        Route::post('/login', 'Admin\AuthController@checkLogin');
     });
 
     // Auth ( Authenticated ) Admin Routes
