@@ -30,6 +30,14 @@ Route::prefix('admin', function(){
         Route::post('/admins/{id}/update', 'Admin\AdminController@update');
         Route::post('/admins/{id}/delete', 'Admin\AdminController@delete');
 
+        // Users resource
+        Route::get('/users', 'Admin\UserController@index');
+        Route::get('/users/create', 'Admin\UserController@create');
+        Route::post('/users/store', 'Admin\UserController@store');
+        Route::get('/users/{id}/edit', 'Admin\UserController@edit');
+        Route::post('/users/{id}/update', 'Admin\UserController@update');
+        Route::post('/users/{id}/delete', 'Admin\UserController@delete');
+
 
     });
 

@@ -18,7 +18,7 @@
                 <div class="box box-primary">
                     <form action="{{ url('admin/admins/' . $admin->id . '/update') }}" method="post">
                         <div class="box-body">
-                            @include('layouts.admin.dashboard.partials.form')
+                            @include('layouts.admin.dashboard.partials.form-admin')
                         </div>
                         <div class="box-footer">
                             <button type="submit" class="btn btn-primary">Submit</button>

@@ -2,16 +2,16 @@
 
 namespace App\Controllers\Admin;
 
-use App\Models\Admin;
+use App\Models\User;
 use Phpmng\Http\Request;
 use Phpmng\Session\Session;
 use Phpmng\Validation\Validate;
 
-class AdminController
+class UserController
 {
 
     /**
-     * Show all admins
+     * Show all users
      * 
      * @ return view
      */
@@ -19,24 +19,24 @@ class AdminController
     public function index()
     {
 
-        $admins = Admin::get();
+        $users = User::get();
 
-        return view('admin.admins.index', ['admins' => $admins]);
+        return view('admin.users.index', ['users' => $users]);
     }
 
     /**
-     * Create new Admin
+     * Create new User
      * 
      * @return view
      */
 
     public function create()
     {
-        return view('admin.admins.create');
+        return view('admin.users.create');
     }
 
     /**
-     * Store new admin
+     * Store new user
      *
      * @return redirect
      */
@@ -45,55 +45,55 @@ class AdminController
         Validate::validate([
             'first_name' => 'required|min:3|max:30',
             'last_name' => 'required|min:3|max:30',
-            'user_name' => 'required|min:3|max:30|unique:admins,user_name',
+            'user_name' => 'required|min:3|max:30|unique:users,user_name',
             'password' => 'required|min:6|max:50',
         ], false);
 
-        Admin::insert([
+        User::insert([
             'first_name' => Request::post('first_name'),
             'last_name' => Request::post('last_name'),
             'user_name' => Request::post('user_name'),
             'password' => password_hash(Request::post('password'), PASSWORD_BCRYPT)
         ]);
 
-        Session::set('message', "The admin is created successfully");
-        return redirect(url('admin/admins'));
+        Session::set('message', "The user is created successfully");
+        return redirect(url('admin/users'));
     }
 
     /**
-     * Edit admin by the given id
+     * Edit user by the given id
      *
      * @param string $id
      * @return view
      */
     public function edit($id) {
-        $admin = Admin::where('id', '=', $id)->first();
-        if (! $admin) {
-            Session::set('message', 'The admin is not found');
-            return redirect(url('admin/admins'));
+        $user = User::where('id', '=', $id)->first();
+        if (! $user) {
+            Session::set('message', 'The user is not found');
+            return redirect(url('admin/users'));
         }
 
-        $title = "Edit " . $admin->first_name;
-        return view('admin.admins.edit', ['admin' => $admin, 'title' => $title]);
+        $title = "Edit " . $user->first_name;
+        return view('admin.users.edit', ['user' => $user, 'title' => $title]);
     }
 
     /**
-     * Update current admin
+     * Update current user
      *
      * @param string $id
      * @return redirect
      */
     public function update($id) {
-        $admin = Admin::where('id', '=', $id)->first();
-        if (! $admin) {
-            Session::set('message', 'The admin is Not found');
-            return redirect(url('admin/admins'));
+        $user = User::where('id', '=', $id)->first();
+        if (! $user) {
+            Session::set('message', 'The user is Not found');
+            return redirect(url('admin/users'));
         }
 
         Validate::validate([
             'first_name' => 'required|min:3|max:30',
             'last_name' => 'required|min:3|max:30',
-            'user_name' => 'required|min:3|max:30|unique:admins,user_name,'.$admin->user_name,
+            'user_name' => 'required|min:3|max:30|unique:users,user_name,'.$user->user_name,
             'password' => 'min:6|max:50',
         ], false);
 
@@ -104,28 +104,28 @@ class AdminController
         ];
         $data = (Request::post('password')) ? array_merge($data, ['password' => password_hash(Request::post('password'), PASSWORD_BCRYPT)]) : $data;
 
-        Admin::where('id', '=', $id)->update($data);
+        User::where('id', '=', $id)->update($data);
 
-        Session::set('message', "The admin has been updated successfully");
-        return redirect(url('admin/admins'));
+        Session::set('message', "The user has been updated successfully");
+        return redirect(url('admin/users'));
     }
 
     /**
-     * Delete existing admin
+     * Delete existing user
      *
      * @param string $id
      * @return \Phplite\Url\Url
      */
     public function delete($id) {
-        $admin = Admin::where('id', '=', $id)->first();
-        if (! $admin) {
-            Session::set('message', 'The admin is not found');
-            return redirect(url('admin/admins'));
+        $user = User::where('id', '=', $id)->first();
+        if (! $user) {
+            Session::set('message', 'The user is not found');
+            return redirect(url('admin/users'));
         }
 
-        Admin::where('id', '=', $id)->delete();
-        Session::set('message', 'The admin has been deleted successfully');
-        return redirect(url('admin/admins'));
+        User::where('id', '=', $id)->delete();
+        Session::set('message', 'The user has been deleted successfully');
+        return redirect(url('admin/users'));
     }
 
 }
