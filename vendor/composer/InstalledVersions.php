@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'cf8df56a614183559e827a19ea76e342e8681e6c',
+    'reference' => 'd33c01d6a7954094c97dbe1aaa376f21bc48c1e5',
     'name' => 'zakariasamy/phpmng',
   ),
   'versions' => 
@@ -280,16 +280,16 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'cf8df56a614183559e827a19ea76e342e8681e6c',
+      'reference' => 'd33c01d6a7954094c97dbe1aaa376f21bc48c1e5',
     ),
     'zakariasamy/phpmng-core' => 
     array (
-      'pretty_version' => '1.0.4',
-      'version' => '1.0.4.0',
+      'pretty_version' => '1.0.5',
+      'version' => '1.0.5.0',
       'aliases' => 
       array (
       ),
-      'reference' => '983fd82168177234852cfff272fd8dae035edcb3',
+      'reference' => '50f4fb7999a708ba8ca25f70e474d067d9125379',
     ),
   ),
 );

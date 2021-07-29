@@ -1,6 +1,6 @@
 <html>
 <head></head>
 <body>
-    Hello from phplite
+    Hello from phpmng
 </body>
 </html>

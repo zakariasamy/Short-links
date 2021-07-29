@@ -1672,17 +1672,17 @@
         },
         {
             "name": "zakariasamy/phpmng-core",
-            "version": "1.0.4",
-            "version_normalized": "1.0.4.0",
+            "version": "1.0.5",
+            "version_normalized": "1.0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zakariasamy/phpmng-core.git",
-                "reference": "983fd82168177234852cfff272fd8dae035edcb3"
+                "reference": "50f4fb7999a708ba8ca25f70e474d067d9125379"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zakariasamy/phpmng-core/zipball/983fd82168177234852cfff272fd8dae035edcb3",
-                "reference": "983fd82168177234852cfff272fd8dae035edcb3",
+                "url": "https://api.github.com/repos/zakariasamy/phpmng-core/zipball/50f4fb7999a708ba8ca25f70e474d067d9125379",
+                "reference": "50f4fb7999a708ba8ca25f70e474d067d9125379",
                 "shasum": ""
             },
             "require": {
@@ -1691,7 +1691,7 @@
                 "php": "^7.1.3",
                 "rakit/validation": "^1.4"
             },
-            "time": "2021-07-28T21:39:02+00:00",
+            "time": "2021-07-29T00:15:24+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -1715,7 +1715,7 @@
             "description": "The core of phpmng Framework",
             "support": {
                 "issues": "https://github.com/zakariasamy/phpmng-core/issues",
-                "source": "https://github.com/zakariasamy/phpmng-core/tree/1.0.4"
+                "source": "https://github.com/zakariasamy/phpmng-core/tree/1.0.5"
             },
             "install-path": "../zakariasamy/phpmng-core"
         }
