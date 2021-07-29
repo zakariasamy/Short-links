@@ -119,6 +119,13 @@ class Database {
     protected static $binding = []; // Merge (where, having) binding
 
     /**
+     * Check if developer uses raw function
+     * 
+     * @val bool
+     */
+    protected static $raw;
+
+    /**
      * Database constructor
      */
     public function __construct($table) {
@@ -232,7 +239,7 @@ class Database {
      * @return object $type
      */
     public static function join($table, $first, $operator, $second, $type = "INNER") {
-        static::$join .= " " . $type . " JOIN " . $table . " ON " . $first . $operator . $second . " ";
+        static::$join .= " " . $type . " JOIN " . $table . " ON " . static::$table . '.' . $first . $operator . $table . '.' .$second . " ";
 
         return static::instance();
     }
@@ -400,15 +407,17 @@ class Database {
      * @return object $data
      */
     private static function fetchExecute() {
-        static::query();
-        $query = static::$query;
-        $data = static::$connection->prepare($query);
-        $data->execute(static::$binding);
+        
+        if(! static::$raw)
+            static::query();
 
-        static::clear();
-
-        return $data;
-    }
+            $query = static::$query;
+            
+            $data = static::$connection->prepare($query);
+            $data->execute(static::$binding);
+            static::clear();
+            
+        return $data;    }
 
     /**
      * Get records
@@ -417,6 +426,7 @@ class Database {
      */
     public static function get() {
         $data = static::fetchExecute();
+
         $result = $data->fetchAll();
 
         return $result;
@@ -428,9 +438,9 @@ class Database {
      * @return object $result
      */
     public static function first() {
+        
         $data = static::fetchExecute(); // NEED EDIT , put limit 1 instead
         $result = $data->fetch();
-
         return $result;
     }
 
@@ -647,4 +657,16 @@ class Database {
        // return static::$select;
         return static::$query;
     }
+
+    /**
+     * Allow developer to write commands from scratch
+     * 
+     */
+
+     public static function raw($command, $data = []){
+         static::$query = $command;
+         static::$binding = $data;
+         static::$raw = true;
+         return static::instance();
+     }
 }

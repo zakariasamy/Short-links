@@ -114,7 +114,7 @@ class AdminController
      * Delete existing admin
      *
      * @param string $id
-     * @return \Phplite\Url\Url
+     * @return redirect
      */
     public function delete($id) {
         $admin = Admin::where('id', '=', $id)->first();

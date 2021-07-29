@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'd33c01d6a7954094c97dbe1aaa376f21bc48c1e5',
+    'reference' => 'a0dfce86fda5facf6f2440eb7bb13f1b4c61f800',
     'name' => 'zakariasamy/phpmng',
   ),
   'versions' => 
@@ -200,21 +200,21 @@
     ),
     'symfony/polyfill-mbstring' => 
     array (
-      'pretty_version' => 'v1.23.0',
-      'version' => '1.23.0.0',
+      'pretty_version' => 'v1.23.1',
+      'version' => '1.23.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => '2df51500adbaebdc4c38dea4c89a2e131c45c8a1',
+      'reference' => '9174a3d80210dca8daa7f31fec659150bbeabfc6',
     ),
     'symfony/polyfill-php80' => 
     array (
-      'pretty_version' => 'v1.23.0',
-      'version' => '1.23.0.0',
+      'pretty_version' => 'v1.23.1',
+      'version' => '1.23.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'eca0bf41ed421bed1b57c4958bab16aa86b757d0',
+      'reference' => '1100343ed1a92e3a38f9ae122fc0eb21602547be',
     ),
     'symfony/translation' => 
     array (
@@ -257,16 +257,16 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'd33c01d6a7954094c97dbe1aaa376f21bc48c1e5',
+      'reference' => 'a0dfce86fda5facf6f2440eb7bb13f1b4c61f800',
     ),
     'zakariasamy/phpmng-core' => 
     array (
-      'pretty_version' => '1.0.5',
-      'version' => '1.0.5.0',
+      'pretty_version' => '1.0.6',
+      'version' => '1.0.6.0',
       'aliases' => 
       array (
       ),
-      'reference' => '50f4fb7999a708ba8ca25f70e474d067d9125379',
+      'reference' => '9305ac77d42d1e5bffc0fc1d5dc2e61d4012b20e',
     ),
   ),
 );

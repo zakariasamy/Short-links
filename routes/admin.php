@@ -38,6 +38,10 @@ Route::prefix('admin', function(){
         Route::post('/users/{id}/update', 'Admin\UserController@update');
         Route::post('/users/{id}/delete', 'Admin\UserController@delete');
 
+        // Links resource
+        Route::get('/links', 'Admin\LinkController@index');
+        Route::post('/links/{id}/delete', 'Admin\LinkController@delete');
+
 
     });
 

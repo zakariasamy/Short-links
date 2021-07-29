@@ -114,7 +114,7 @@ class UserController
      * Delete existing user
      *
      * @param string $id
-     * @return \Phplite\Url\Url
+     * @return redirect
      */
     public function delete($id) {
         $user = User::where('id', '=', $id)->first();
