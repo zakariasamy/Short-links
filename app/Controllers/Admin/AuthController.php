@@ -37,16 +37,14 @@ class AuthController{
             return redirect(previous());
         }
 
-        Request::post('remember') == 'on' ? Cookie::set('admin', $admin->id) : Session::set('admin', $admin->id);
+        Request::post('remember') == 'on' ? Cookie::set('admins', $admin->id) : Session::set('admins', $admin->id);
         return redirect(url('/admin/dashboard'));
     }
 
 
     public function logout(){
-       $a =  Cookie::remove('admin');
-
-        //dd(isset($_COOKIE['admin']) && $_COOKIE['admin'] != '');
-        Session::remove('admin');
+        Cookie::remove('admins');
+        Session::remove('admins');
         return redirect('/admin/login');
     }
 

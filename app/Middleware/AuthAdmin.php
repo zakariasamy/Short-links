@@ -13,7 +13,7 @@ class AuthAdmin{
          *  Check if there's Session with key 'admin'
          *  if there get it, IF Not get the Cookie with key 'admin'
          */
-        $auth = Session::get('admin') ?: Cookie::get('admin');
+        $auth = Session::get('admins') ?: Cookie::get('admins');
         
         if(! $auth){
             redirect(URL::redirect('/admin/login'));
