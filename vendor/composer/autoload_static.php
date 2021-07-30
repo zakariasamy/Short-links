@@ -15,6 +15,7 @@ class ComposerStaticInit2402789f03fa9f9b04fc33b573291f4a
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
         'ef65a1626449d89d0811cf9befce46f0' => __DIR__ . '/..' . '/illuminate/events/functions.php',
         'ac794e953c11e8650a2e277942f18cda' => __DIR__ . '/..' . '/zakariasamy/phpmng-core/src/Helpers/helper.php',
+        '91b42d16053541fc6cafce08b24e25c3' => __DIR__ . '/../..' . '/app/Helpers/helper.php',
     );
 
     public static $prefixLengthsPsr4 = array (

@@ -2,7 +2,11 @@
 
 use Phpmng\Router\Route;
 
+// Home page
 Route::get('/', 'Front\HomeController@index');
+
+// Save link
+Route::post('/links/store', 'Front\LinkController@store');
 
 Route::middleware('GuestUser', function(){
     // Login

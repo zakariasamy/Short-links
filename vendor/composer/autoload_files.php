@@ -14,4 +14,5 @@ return array(
     '72579e7bd17821bb1321b87411366eae' => $vendorDir . '/illuminate/support/helpers.php',
     'ef65a1626449d89d0811cf9befce46f0' => $vendorDir . '/illuminate/events/functions.php',
     'ac794e953c11e8650a2e277942f18cda' => $vendorDir . '/zakariasamy/phpmng-core/src/Helpers/helper.php',
+    '91b42d16053541fc6cafce08b24e25c3' => $baseDir . '/app/Helpers/helper.php',
 );
