@@ -1603,16 +1603,16 @@
         },
         {
             "name": "zakariasamy/phpmng-core",
-            "version": "1.0.6",
+            "version": "1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zakariasamy/phpmng-core.git",
-                "reference": "9305ac77d42d1e5bffc0fc1d5dc2e61d4012b20e"
+                "reference": "3414cc6e18aceeaa08f2310aa4e0898baa06e430"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zakariasamy/phpmng-core/zipball/9305ac77d42d1e5bffc0fc1d5dc2e61d4012b20e",
-                "reference": "9305ac77d42d1e5bffc0fc1d5dc2e61d4012b20e",
+                "url": "https://api.github.com/repos/zakariasamy/phpmng-core/zipball/3414cc6e18aceeaa08f2310aa4e0898baa06e430",
+                "reference": "3414cc6e18aceeaa08f2310aa4e0898baa06e430",
                 "shasum": ""
             },
             "require": {
@@ -1643,9 +1643,9 @@
             "description": "The core of phpmng Framework",
             "support": {
                 "issues": "https://github.com/zakariasamy/phpmng-core/issues",
-                "source": "https://github.com/zakariasamy/phpmng-core/tree/1.0.6"
+                "source": "https://github.com/zakariasamy/phpmng-core/tree/1.0.9"
             },
-            "time": "2021-07-29T21:51:24+00:00"
+            "time": "2021-07-30T23:50:01+00:00"
         }
     ],
     "packages-dev": [],

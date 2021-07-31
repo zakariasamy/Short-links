@@ -45,4 +45,55 @@ class LinkController{
 
 
     }
+
+
+    /**
+     * Redirect short-url to the original url
+     * 
+     * @return redirect
+     */
+    public function redirect($shortLink){
+
+        $link = Link::where('short_url', '=', $shortLink)->first();
+
+        if(!$link) // The link dosen't exist
+            return view('errors.404');
+        
+        // Update the number of clicks
+        Link::where('id', '=', $link->id)->update(['clicks' => ++$link->clicks]);
+        redirect($link->full_url);
+    }
+
+
+    /**
+     * Show all links
+     * 
+     * @return view
+     */
+    public function myLinks(){
+        $auth = auth('users');
+        $links = Link::where('user_id', '=', $auth->id)->paginate(1);
+        return view('front.links.index', ['links' => $links]);
+    }
+
+    /**
+     * Delete Link by id
+     * 
+     * @param id
+     * @return redirect
+     */
+    public function delete($id){
+
+        $auth = auth('users');
+        $link = Link::where('id', '=', $id)->where('user_id', '=', $auth->id)->first();
+
+        if(!$link){
+            Session::set('message', 'The link is Not Found');
+            return redirect('/my-links');
+        }
+        Link::where('id', '=', $link->id)->delete();
+        Session::set('message', 'The link has been deleted successfully');
+        return redirect('/my-links');
+
+    }
 }

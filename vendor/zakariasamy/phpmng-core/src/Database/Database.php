@@ -606,7 +606,7 @@ class Database {
             # Show arrow of first page
             $active_class = $current_page == 1 ? 'active' : '';
             $href = strpos($full_link, '?') ? ($full_link.'&page=1') : ($full_link.'?page=1');
-            $html .= "<li class='link $active_class'><a href='$href'>&#8594;</a></li>";
+            $html .= "<li class='link $active_class'><a href='$href'>&#8592;</a></li>";
             
 
             # Show the rest of pages
@@ -617,9 +617,9 @@ class Database {
             }
 
             # Show arrow of Last page
-                $active_class = $current_page == 1 ? 'active' : '';
+                $active_class = $current_page == $pages ? 'active' : '';
                 $href = strpos($full_link, '?') ? ($full_link."&page=$pages") : ($full_link."?page=$pages");
-                $html .= "<li class='link $active_class'><a href='$href'>&#8592;</a></li>";
+                $html .= "<li class='link $active_class'><a href='$href'>&#8594;</a></li>";
 
 
             
@@ -670,3 +670,4 @@ class Database {
          return static::instance();
      }
 }
+

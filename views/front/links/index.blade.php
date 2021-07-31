@@ -21,7 +21,7 @@
                             <tr>
                                 <td>{{ $link->full_url }}</td>
                                 <td>{{ url('link/'.$link->short_url) }}</td>
-                                <td>{{ $link->click }}</td>
+                                <td>{{ $link->clicks }}</td>
                                 <td> <button class="btn text-white" onclick="copy('{{ url('link/'.$link->short_url) }}')">Copy</button> </td>
                                 <td>
                                     <a href="#" data-action="{{ url('link/'. $link->id . '/delete') }}" class="btn btn-danger delete_confirmation" data-toggle="modal" data-target="#deleteModal">Delete</a>
@@ -36,7 +36,7 @@
         </div>
     </section>
 
-    @include('web.layouts.delete_modal')
+    @include('layouts.front.partials.delete_modal')
 @endsection
 
 @section('js')
