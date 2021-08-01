@@ -18,9 +18,7 @@ class AdminController
 
     public function index()
     {
-
-        $admins = Admin::get();
-
+        $admins = Admin::paginate(10);
         return view('admin.admins.index', ['admins' => $admins]);
     }
 
