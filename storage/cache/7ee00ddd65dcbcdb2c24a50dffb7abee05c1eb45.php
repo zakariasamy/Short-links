@@ -1,7 +1,17 @@
 <?php $__env->startSection('css'); ?>
     <!-- DataTables -->
     <link rel="stylesheet" href="<?php echo e(asset('admin/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css')); ?>">
-<?php $__env->stopSection(); ?>
+    <style>
+        div#datatable_wrapper .pagination, .dataTables_info {
+            display: none;
+        }
+
+        .links {
+        display: flex;
+        justify-content: center;
+        }
+    </style>
+    <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('js'); ?>
     <!-- DataTables -->
@@ -52,7 +62,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <?php $__currentLoopData = $users; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $user): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                    <?php $__currentLoopData = $users['data']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $user): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                         <tr>
                             <td><?php echo e($user->id); ?></td>
                             <td><?php echo e($user->first_name); ?></td>
@@ -66,6 +76,10 @@
                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </tbody>
                 </table>
+            </div>
+            <div class="links">
+                <?php echo links($users['current_page'], $users['pages']); ?>
+
             </div>
             <!-- /.box-body -->
         </div>

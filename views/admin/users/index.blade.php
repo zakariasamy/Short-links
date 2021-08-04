@@ -3,7 +3,17 @@
 @section('css')
     <!-- DataTables -->
     <link rel="stylesheet" href="{{ asset('admin/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css') }}">
-@endsection
+    <style>
+        div#datatable_wrapper .pagination, .dataTables_info {
+            display: none;
+        }
+
+        .links {
+        display: flex;
+        justify-content: center;
+        }
+    </style>
+    @endsection
 
 @section('js')
     <!-- DataTables -->
@@ -54,7 +64,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach($users as $user)
+                    @foreach($users['data'] as $user)
                         <tr>
                             <td>{{ $user->id }}</td>
                             <td>{{ $user->first_name }}</td>
@@ -68,6 +78,9 @@
                     @endforeach
                     </tbody>
                 </table>
+            </div>
+            <div class="links">
+                {!! links($users['current_page'], $users['pages']) !!}
             </div>
             <!-- /.box-body -->
         </div>

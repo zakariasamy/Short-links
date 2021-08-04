@@ -19,7 +19,7 @@ class UserController
     public function index()
     {
 
-        $users = User::get();
+        $users = User::paginate();
 
         return view('admin.users.index', ['users' => $users]);
     }

@@ -4,14 +4,14 @@
     <!-- DataTables -->
     <link rel="stylesheet" href="{{ asset('admin/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css') }}">
     <style>
-    div#datatable_wrapper .pagination, .dataTables_info {
-        display: none;
-    }
+        div#datatable_wrapper .pagination, .dataTables_info {
+            display: none;
+        }
 
-    .links {
-    display: flex;
-    justify-content: center;
-}
+        .links {
+        display: flex;
+        justify-content: center;
+        }
     </style>
 @endsection
 
