@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '78a18710c6d00525ad258cb2adb7dd985402ff08',
+    'reference' => '12ffeb308380a6dd25cb0f932b65bbdd6e2bb99a',
     'name' => 'zakariasamy/phpmng',
   ),
   'versions' => 
@@ -29,46 +29,55 @@
       ),
       'reference' => 'fdf92f03e150ed84d5967a833ae93abffac0315b',
     ),
-    'illuminate/bus' => 
+    'firebase/php-jwt' => 
     array (
-      'pretty_version' => 'v8.52.0',
-      'version' => '8.52.0.0',
+      'pretty_version' => 'v5.4.0',
+      'version' => '5.4.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '0b9722013b908a67e9b815a3bad4f49e25828f7b',
+      'reference' => 'd2113d9b2e0e349796e72d2a63cf9319100382d2',
+    ),
+    'illuminate/bus' => 
+    array (
+      'pretty_version' => 'v8.53.1',
+      'version' => '8.53.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '741819dbb813504f3ebd53596eccfe2c28212722',
     ),
     'illuminate/collections' => 
     array (
-      'pretty_version' => 'v8.52.0',
-      'version' => '8.52.0.0',
+      'pretty_version' => 'v8.53.1',
+      'version' => '8.53.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => '78d853243fc046f83a1d2b1e60420257d3e732e4',
+      'reference' => 'd470b6b804de3db1a8a91b0900ad3cc9cca61ab5',
     ),
     'illuminate/container' => 
     array (
-      'pretty_version' => 'v8.52.0',
-      'version' => '8.52.0.0',
+      'pretty_version' => 'v8.53.1',
+      'version' => '8.53.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => '382959676d85583f0e8fdd248bceb4b8762dc1ed',
+      'reference' => 'ecb645e1838cdee62eebd07ded490b1de5505f35',
     ),
     'illuminate/contracts' => 
     array (
-      'pretty_version' => 'v8.52.0',
-      'version' => '8.52.0.0',
+      'pretty_version' => 'v8.53.1',
+      'version' => '8.53.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => '199fcedc161ba4a0b83feaddc4629f395dbf1641',
+      'reference' => '504a34286a1b4c5421c43087d6bd4e176138f6fb',
     ),
     'illuminate/events' => 
     array (
-      'pretty_version' => 'v8.52.0',
-      'version' => '8.52.0.0',
+      'pretty_version' => 'v8.53.1',
+      'version' => '8.53.1.0',
       'aliases' => 
       array (
       ),
@@ -76,8 +85,8 @@
     ),
     'illuminate/filesystem' => 
     array (
-      'pretty_version' => 'v8.52.0',
-      'version' => '8.52.0.0',
+      'pretty_version' => 'v8.53.1',
+      'version' => '8.53.1.0',
       'aliases' => 
       array (
       ),
@@ -85,8 +94,8 @@
     ),
     'illuminate/macroable' => 
     array (
-      'pretty_version' => 'v8.52.0',
-      'version' => '8.52.0.0',
+      'pretty_version' => 'v8.53.1',
+      'version' => '8.53.1.0',
       'aliases' => 
       array (
       ),
@@ -94,8 +103,8 @@
     ),
     'illuminate/pipeline' => 
     array (
-      'pretty_version' => 'v8.52.0',
-      'version' => '8.52.0.0',
+      'pretty_version' => 'v8.53.1',
+      'version' => '8.53.1.0',
       'aliases' => 
       array (
       ),
@@ -103,21 +112,21 @@
     ),
     'illuminate/support' => 
     array (
-      'pretty_version' => 'v8.52.0',
-      'version' => '8.52.0.0',
+      'pretty_version' => 'v8.53.1',
+      'version' => '8.53.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'ee397b851a411ad490363a47df7476a24f93ca2e',
+      'reference' => '4138cf066c8c910362491057ad522dd63d45fb1b',
     ),
     'illuminate/view' => 
     array (
-      'pretty_version' => 'v8.52.0',
-      'version' => '8.52.0.0',
+      'pretty_version' => 'v8.53.1',
+      'version' => '8.53.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'fd894237a3d793eca55bc71ff6317fae1bfe1856',
+      'reference' => '960d8032946b423bf7db4350d36f7013d2c8aae7',
     ),
     'jenssegers/blade' => 
     array (
@@ -257,7 +266,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '78a18710c6d00525ad258cb2adb7dd985402ff08',
+      'reference' => '12ffeb308380a6dd25cb0f932b65bbdd6e2bb99a',
     ),
     'zakariasamy/phpmng-core' => 
     array (
@@ -266,7 +275,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '3414cc6e18aceeaa08f2310aa4e0898baa06e430',
+      'reference' => '843e61b362c951a0dc7b7ccd766a2a67e16b4d67',
     ),
   ),
 );
