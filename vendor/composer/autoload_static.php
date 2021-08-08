@@ -27,6 +27,10 @@ class ComposerStaticInit2402789f03fa9f9b04fc33b573291f4a
         array (
             'Whoops\\' => 7,
         ),
+        'T' => 
+        array (
+            'Test\\DevCoder\\' => 14,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Php80\\' => 23,
@@ -68,6 +72,7 @@ class ComposerStaticInit2402789f03fa9f9b04fc33b573291f4a
         'D' => 
         array (
             'Doctrine\\Inflector\\' => 19,
+            'DevCoder\\' => 9,
         ),
         'C' => 
         array (
@@ -87,6 +92,10 @@ class ComposerStaticInit2402789f03fa9f9b04fc33b573291f4a
         'Whoops\\' => 
         array (
             0 => __DIR__ . '/..' . '/filp/whoops/src/Whoops',
+        ),
+        'Test\\DevCoder\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/devcoder-xyz/php-dotenv/tests',
         ),
         'Symfony\\Polyfill\\Php80\\' => 
         array (
@@ -173,6 +182,10 @@ class ComposerStaticInit2402789f03fa9f9b04fc33b573291f4a
         'Doctrine\\Inflector\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector',
+        ),
+        'DevCoder\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/devcoder-xyz/php-dotenv/src',
         ),
         'Carbon\\' => 
         array (

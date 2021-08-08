@@ -6,11 +6,20 @@
     'aliases' => 
     array (
     ),
-    'reference' => '12ffeb308380a6dd25cb0f932b65bbdd6e2bb99a',
+    'reference' => '62bcbcaa460b338cb158da57739fc2a09a1fa06e',
     'name' => 'zakariasamy/phpmng',
   ),
   'versions' => 
   array (
+    'devcoder-xyz/php-dotenv' => 
+    array (
+      'pretty_version' => '1.1.1',
+      'version' => '1.1.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '1f478184b7fd199f5ffb0f89c1547f61c8172042',
+    ),
     'doctrine/inflector' => 
     array (
       'pretty_version' => '2.0.3',
@@ -266,16 +275,16 @@
       'aliases' => 
       array (
       ),
-      'reference' => '12ffeb308380a6dd25cb0f932b65bbdd6e2bb99a',
+      'reference' => '62bcbcaa460b338cb158da57739fc2a09a1fa06e',
     ),
     'zakariasamy/phpmng-core' => 
     array (
-      'pretty_version' => '1.0.9',
-      'version' => '1.0.9.0',
+      'pretty_version' => '1.0.10',
+      'version' => '1.0.10.0',
       'aliases' => 
       array (
       ),
-      'reference' => '843e61b362c951a0dc7b7ccd766a2a67e16b4d67',
+      'reference' => '37e55a599c1a04e8b4b7401c9c6dd82853bcffcb',
     ),
   ),
 );
